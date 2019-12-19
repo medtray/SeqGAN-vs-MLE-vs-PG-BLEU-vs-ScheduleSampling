@@ -685,16 +685,16 @@ def PG_BLEU(generator_):
 
 if __name__ == '__main__':
 
-    # perf_dict_ss = {}
-    # true_loss_ss, generator_loss_ss, _=SS(epochs_for_mle_model, 10, 0.5, original_generator,1)
-    # perf_dict_ss['true_loss'] = true_loss_ss
-    # perf_dict_ss['generator_loss'] = generator_loss_ss
-    # np.save('perf_dict_ss', perf_dict_ss)
+    perf_dict_ss = {}
+    true_loss_ss, generator_loss_ss, _=SS(epochs_for_mle_model, 10, 0.5, original_generator,1)
+    perf_dict_ss['true_loss'] = true_loss_ss
+    perf_dict_ss['generator_loss'] = generator_loss_ss
+    np.save('perf_dict_ss', perf_dict_ss)
     # #
-    # perf_dict_mle={}
-    # true_loss_mle, generator_loss_mle,_=MLE(epochs_for_mle_model,original_generator)
-    # perf_dict_mle['true_loss'] = true_loss_mle
-    # perf_dict_mle['generator_loss'] = generator_loss_mle
-    # np.save('perf_dict_mle', perf_dict_mle)
+    perf_dict_mle={}
+    true_loss_mle, generator_loss_mle,_=MLE(epochs_for_mle_model,original_generator)
+    perf_dict_mle['true_loss'] = true_loss_mle
+    perf_dict_mle['generator_loss'] = generator_loss_mle
+    np.save('perf_dict_mle', perf_dict_mle)
     main(original_generator)
-    #PG_BLEU(original_generator)
+    PG_BLEU(original_generator)
