@@ -1,4 +1,4 @@
-# SeqGAN-PyTorch
+# SeqGAN-vs-MLE-vs-Pg-BLEU-vsScheduledSampling-PyTorch
 A implementation of SeqGAN, MLE, PG-BLEU and Scheduled Sampling in PyTorch
 
 
